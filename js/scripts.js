@@ -1,6 +1,6 @@
-var three = ("3");
-var two = ("2");
-var one = ("1");
+var three = "3";
+var two = "2";
+var one = "1";
 
 var beepBoop = function(value) {
   var resultArray = [];
@@ -8,26 +8,18 @@ var beepBoop = function(value) {
     alert("Cmon Dave, enter a different number.")
   }else {
     for (var i = 0; i <= value; i++) {
-      resultArray += i;
-      var numbers = resultArray.split(" ");
-      console.log(numbers);
-      if (three.includes(i) === true) {
-        a = ("I'm sorry, Dave. I'm afraid I can't do that. ");
-        resultArray += a;
-      }else if (two.includes(i) === true) {
-        a = ("Boop ");
-        resultArray += a;
-      }else if (one.includes(i) === true) {
-        a = ("Beep ");
-        resultArray += a;
-        console.log(i);
+      if (i.toString().includes(three)) {
+        resultArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      }else if (i.toString().includes(two)) {
+        resultArray.push("Boop");
+      }else if (i.toString().includes(one)) {
+        resultArray.push("Beep");
       }else {
-        resultArray += i;
+        resultArray.push(i)
       }
     };
-    console.log(resultArray);
   }
-  return resultArray;
+  return resultArray.join(", ");
 };
 
 $(document).ready(function(){
