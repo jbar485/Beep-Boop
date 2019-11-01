@@ -8,6 +8,9 @@ var beepBoop = function(value) {
     alert("Cmon Dave, enter a different number.")
   }else {
     for (var i = 0; i <= value; i++) {
+      resultArray += i;
+      var numbers = resultArray.split(" ");
+      console.log(numbers);
       if (three.includes(i) === true) {
         a = ("I'm sorry, Dave. I'm afraid I can't do that. ");
         resultArray += a;
