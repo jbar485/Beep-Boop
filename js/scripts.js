@@ -29,6 +29,7 @@ $(document).ready(function(){
     var name = $("input#name-input").val();
     var value = $("input#number-input").val();
     $("#final-answer").text(beepBoop(value));
+    $("#final-card").show();
 
   });
 
