@@ -9,16 +9,14 @@ var beepBoop = function(value) {
   }else {
     for (var i = 0; i <= value; i++) {
       if (three.includes(i) === true) {
-        i = ("I'm sorry, Dave. I'm afraid I can't do that. ");
-        resultArray += i;
+        a = ("I'm sorry, Dave. I'm afraid I can't do that. ");
+        resultArray += a;
       }else if (two.includes(i) === true) {
-        i = ("Boop");
-        resultArray += i;
+        a = ("Boop");
+        resultArray += a;
       }else if (one.includes(i) === true) {
-        a = i.pop();
-        i = ("Beep");
-        resultArray += i;
-        i = a;
+        a = ("Beep");
+        resultArray += a;
       }else {
         resultArray += i;
       }
