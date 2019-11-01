@@ -1,6 +1,6 @@
 var three = ("3");
 var two = ("2");
-var one = ["1"];
+var one = ("1");
 
 var beepBoop = function(value) {
   var resultArray = [];
@@ -14,6 +14,11 @@ var beepBoop = function(value) {
       }else if (two.includes(i) === true) {
         i = ("Boop");
         resultArray += i;
+      }else if (one.includes(i) === true) {
+        a = i.pop();
+        i = ("Beep");
+        resultArray += i;
+        i = a;
       }else {
         resultArray += i;
       }
